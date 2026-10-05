@@ -1,0 +1,343 @@
+/* 
+ * Football Player Similarity Analytics - Modern Sports Theme CSS
+ * Sleek Dark Dashboard with Pitch Green and Electric Blue Accents
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #0a0d14;
+  --bg-surface: #111827;
+  --bg-surface-elevated: #1f2937;
+  --border-color: #374151;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --accent-green: #10b981;
+  --accent-green-bright: #00e676;
+  --accent-blue: #38bdf8;
+  --accent-purple: #8b5cf6;
+  --accent-amber: #f59e0b;
+  --accent-crimson: #f43f5e;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+/* Global Font and Body */
+html, body, [class*="css"] {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-main);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Main App Container Styling */
+.main .block-container {
+  padding-top: 1.8rem;
+  padding-bottom: 3rem;
+  max-width: 1300px;
+}
+
+/* Header Gradient Title */
+.main-header {
+  background: linear-gradient(135deg, #ffffff 30%, #38bdf8 70%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+  letter-spacing: -0.03em;
+}
+
+.main-subtitle {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+/* Custom KPI Metric Cards */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.kpi-card {
+  background: linear-gradient(145deg, #131b2e 0%, #0d1322 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.kpi-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-blue));
+}
+
+.kpi-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.kpi-value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.kpi-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-green-bright);
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/* Workflow Stage Pills */
+.workflow-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 1.2rem;
+  background: #0f172a;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  margin-bottom: 2rem;
+}
+
+.workflow-step {
+  display: flex;
+  align-items: center;
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.workflow-step.active {
+  background: rgba(16, 185, 129, 0.18);
+  border-color: var(--accent-green);
+  color: var(--accent-green-bright);
+}
+
+.workflow-arrow {
+  color: #64748b;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Player Profile Banner */
+.player-banner {
+  background: linear-gradient(135deg, #111c33 0%, #0a1120 100%);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 14px;
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 1.6rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.player-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.player-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.meta-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+}
+
+.meta-chip.club {
+  border-color: rgba(56, 189, 248, 0.4);
+  background: rgba(56, 189, 248, 0.12);
+  color: #7dd3fc;
+}
+
+.meta-chip.pos {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.12);
+  color: #6ee7b7;
+}
+
+.meta-chip.cluster {
+  border-color: rgba(139, 92, 246, 0.4);
+  background: rgba(139, 92, 246, 0.15);
+  color: #c4b5fd;
+}
+
+/* Similar Player Card */
+.similar-card {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.1rem;
+  margin-bottom: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.similar-card:hover {
+  background: #182234;
+  border-color: var(--accent-green);
+  transform: translateX(4px);
+}
+
+.similar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rank-pill {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.rank-1 { background: linear-gradient(135deg, #fbbf24, #d97706); color: #000; }
+.rank-2 { background: linear-gradient(135deg, #e2e8f0, #94a3b8); color: #000; }
+.rank-3 { background: linear-gradient(135deg, #b45309, #78350f); color: #fff; }
+.rank-4 { background: #1e293b; color: #38bdf8; border: 1px solid #38bdf8; }
+.rank-5 { background: #1e293b; color: #c084fc; border: 1px solid #c084fc; }
+
+.similar-info h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.similar-info p {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.sim-score-container {
+  text-align: right;
+}
+
+.sim-score-pct {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent-green-bright);
+  line-height: 1;
+}
+
+.sim-score-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+/* Model Card */
+.model-card {
+  background: #111827;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.model-card.best {
+  border: 2px solid var(--accent-green);
+  background: linear-gradient(160deg, #112520 0%, #0d151c 100%);
+}
+
+.model-badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.model-badge.winner {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--accent-green-bright);
+  border: 1px solid var(--accent-green);
+}
+
+/* Callout Info Box */
+.info-callout {
+  background: rgba(15, 23, 42, 0.8);
+  border-left: 4px solid var(--accent-blue);
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+/* Custom Table Polish */
+div[data-testid="stDataFrame"] {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
