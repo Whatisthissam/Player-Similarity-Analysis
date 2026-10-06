@@ -67,6 +67,9 @@ Player-Similarity-Analysis/
 ├── Documentation+Report/              # Project report & documentation
 │   └── PlayerSimilarityAnalysis.pdf   # Complete academic major project report
 │
+├── Presentation/                      # Project presentation slides
+│   └── PLAYER-SIMILARITY-ANALYSIS-USING-MACHINE-LEARNING.pdf # Presentation deck (PDF)
+│
 ├── requirements.txt                   # Root dependency file for cloud deployments
 └── .gitignore                         # Git exclusion rules
 ```
