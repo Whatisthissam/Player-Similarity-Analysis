@@ -1,5 +1,9 @@
 # Player Similarity Analysis - Streamlit Application
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://player-similarity-analysis-5qk6oraobr77tvvg6lvzni.streamlit.app/)
+
+> 🚀 **Live Application:** [https://player-similarity-analysis-5qk6oraobr77tvvg6lvzni.streamlit.app/](https://player-similarity-analysis-5qk6oraobr77tvvg6lvzni.streamlit.app/)
+
 A sports analytics web application and interactive player recommendation engine built for **Machine Learning Major Project — Case Study 108: Player Similarity Analysis**.
 
 ---

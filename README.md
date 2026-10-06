@@ -1,9 +1,11 @@
 # ⚽ Football Player Similarity Analysis & Recommendation Platform
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://streamlit.io/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://player-similarity-analysis-5qk6oraobr77tvvg6lvzni.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3%2B-orange.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+> 🚀 **Live Demo:** Try the interactive application live on Streamlit Cloud: [player-similarity-analysis.streamlit.app](https://player-similarity-analysis-5qk6oraobr77tvvg6lvzni.streamlit.app/)
 
 An end-to-end Machine Learning Major Project (**Case Study 108**) for scouting, talent identification, and tactical player replacement using unsupervised clustering and cosine similarity.
 
@@ -104,7 +106,15 @@ Open your browser at `http://localhost:8501`.
 
 ---
 
-## 🌐 Deploy to Streamlit Community Cloud
+## 🌐 Live Demo & Deployment
+
+### 🔗 Live Web Application
+Access the deployed interactive dashboard here:
+👉 **[https://player-similarity-analysis-5qk6oraobr77tvvg6lvzni.streamlit.app/](https://player-similarity-analysis-5qk6oraobr77tvvg6lvzni.streamlit.app/)**
+
+---
+
+### Deploy Your Own Instance to Streamlit Community Cloud
 
 Deploying this application online is free and takes less than 2 minutes:
 
@@ -113,7 +123,7 @@ Deploying this application online is free and takes less than 2 minutes:
 3. **Configure Repository:**
    - **Repository:** `Whatisthissam/Player-Similarity-Analysis`
    - **Branch:** `main`
-   - **Main file path:** `Streamlit/app.py`
+   - **Main file path:** `streamlit_app.py` (or `Streamlit/app.py`)
 4. **Deploy:** Click **"Deploy!"**.
    - Streamlit Cloud will automatically detect dependencies from `requirements.txt` and launch your live application with a public shareable URL.
 
